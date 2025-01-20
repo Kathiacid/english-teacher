@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscribirse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Inscripción</h1>
+        <form method="POST">
+            <label for="hora">Selecciona la Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="nombre">Nombre del Estudiante:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="lugar">Lugar de Residencia:</label>
+            <input type="text" id="lugar" name="lugar" required>
+
+            <label for="telefono">Teléfono del Tutor:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <button type="submit">Inscribirse</button>
+        </form>
+        <a href="{{ url_for('index') }}" class="btn">Volver</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <h1>Horarios Reservados</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Estudiante</th>
+                    <th>Lugar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for reserva in reservas %}
+                    <tr>
+                        <td>{{ reserva.hora }}</td>
+                        <td>{{ reserva.nombre }}</td>
+                        <td>{{ reserva.lugar }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{{ url_for('index') }}" class="btn">Volver</a>
+    </div>
+</body>
+</html>
+
+
