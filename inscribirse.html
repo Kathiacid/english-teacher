@@ -12,16 +12,16 @@
         <form method="POST">
             <label for="hora">Selecciona la Hora:</label>
             <input type="time" id="hora" name="hora" required>
-
+    
             <label for="nombre">Nombre del Estudiante:</label>
             <input type="text" id="nombre" name="nombre" required>
-
+    
             <label for="lugar">Lugar de Residencia:</label>
             <input type="text" id="lugar" name="lugar" required>
-
+    
             <label for="telefono">Teléfono del Tutor:</label>
             <input type="text" id="telefono" name="telefono" required>
-
+    
             <button type="submit">Inscribirse</button>
         </form>
         <a href="{{ url_for('index') }}" class="btn">Volver</a>

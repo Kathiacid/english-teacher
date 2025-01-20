@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(253,237,237,255);             
-}
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(253,237,237,255);      
+}       
+
 
 .contenedor {
     position: relative;        
     width: 900px;              
-    height: 500px;             
+    height: 600px;             
     margin: 50px auto;        
     border-radius: 15px;  
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -22,18 +23,20 @@ body {
     background-size: cover;
     filter: blur(15px); 
     background-repeat: no-repeat;
-    z-index: -1; 
+    z-index: -2; 
 }
 
 
 .flex-container {
     display: flex;
     width: 100%;
-    height:100;
+    height:100%;
     padding: 20px;
     justify-content:center;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
-    
+    align-items: first baseline;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    flex-flow:wrap column;
+    z-index: index 1;
 }
 
 h1 {
@@ -50,15 +53,20 @@ h1 {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: hsla(268, 58%, 62%, 0.681);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
     margin: 10px;
+    box-shadow: rgba(142, 44, 187, 0.2) 0 -25px 18px -14px inset,rgba(168, 44, 187, 0.15) 0 1px 2px,rgba(168, 44, 187, 0.15) 0 2px 4px,rgba(142, 44, 187, 0.15) 0 4px 8px,rgba(142, 44, 187, 0.15) 0 8px 16px,rgba(182, 44, 187, 0.15) 0 16px 32px;
+    
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    color: hsl(267, 86%, 74%);
+}
+.btn:active {
+    transform: scale(.9);
 }
 
 form {
@@ -100,4 +108,83 @@ table, th, td {
 th, td {
     padding: 10px;
     text-align: center;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    
+}
+aside{ 
+    display: flex; 
+    flex-direction: column; 
+    font-size: small;
+    width: 400px;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);  
+    padding: 20px;  
+    text-align: center;
+}
+
+.texto{
+    margin: top 20px;
+}
+
+img{
+    margin: top 10px;
+    border-radius: 50%;
+
+}
+
+.custom-btn {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Fraunces", serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+.custom-btn:hover {
+    color: #424542;
+}
+.custom-btn:active {
+    box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 8px 8px 12px 0px rgba(198, 186, 207, .9), inset -8px -8px 12px 0px rgba(242, 235, 252, 0.9);
+    transform: scale(.9);
+}
+.asidef {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('fotos/2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1.5px);
+    z-index: -1;
+    border-radius: 15px;
+
 }
