@@ -8,10 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>Formulario de Inscripción</h1>
+        <h1 class="h1-formulario">Formulario de Inscripción</h1>
         <form method="POST">
             <label for="hora">Selecciona la Hora:</label>
-            <input type="time" id="hora" name="hora" required>
+            <select>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+            </select>
     
             <label for="nombre">Nombre del Estudiante:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -22,9 +28,9 @@
             <label for="telefono">Teléfono del Tutor:</label>
             <input type="text" id="telefono" name="telefono" required>
     
-            <button type="submit">Inscribirse</button>
+            <button type="submit" id="boton-verde">Inscribirse</button>
         </form>
-        <a href="{{ url_for('index') }}" class="btn">Volver</a>
+        <a href="index.html" class="btn">Volver</a>
     </div>
 </body>
 </html>
