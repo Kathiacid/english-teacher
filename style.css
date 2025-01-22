@@ -92,23 +92,6 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #218838;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
-}
 
 
 .about{
@@ -188,3 +171,47 @@ img{
     border-radius: 15px;
 
 }
+
+form button:hover {
+    background-color: #218838;
+}
+
+
+
+
+/*      TABLAS          */
+.horario {
+    padding:30px;
+    color: #450c18 ;
+}
+
+
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    font-size: medium;
+}
+
+th, td {
+    padding: 30px;
+    text-align: center;
+
+}
+
+thead {
+    background-color: #ed7f87;
+    color: aliceblue;
+    overflow: hidden;
+
+}
+
+tbody { 
+    background-color: #f9d2d4;
+}
+
+.cont { 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+

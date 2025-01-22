@@ -7,28 +7,87 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="flex-container">
-        <h1>Horarios Reservados</h1>
-        <table>
+    <div class="cont">
+        <h1 class="horario">Horarios Reservados</h1>
+        <table border="1">
             <thead>
-                <tr>
-                    <th>Hora</th>
-                    <th>Estudiante</th>
-                    <th>Lugar</th>
-                </tr>
+            <tr>
+                <td>
+                    Horas
+                </td>
+                <td>
+                    Lunes
+                </td>
+                <td>
+                    Martes
+                </td>
+                <td>
+                    Miercoles
+                </td>
+                <td>
+                    Jueves
+                </td>
+                <td>
+                    Viernes
+                </td>
+            </tr>
             </thead>
             <tbody>
-                {% for reserva in reservas %}
-                    <tr>
-                        <td>{{ reserva.hora }}</td>
-                        <td>{{ reserva.nombre }}</td>
-                        <td>{{ reserva.lugar }}</td>
-                    </tr>
-                {% endfor %}
+            <tr>
+                <td>
+                    16:00
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    17:00
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    18:00
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    19:00
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    20:00
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
             </tbody>
         </table>
-        <a href="{{ url_for('index') }}" class="btn">Volver</a>
+        <a href="index.html" class="btn">Volver</a>
     </div>
+    <p>*Tener en cuentra el lugar donde se tendra la clase antes de la hora que quiere tomar, la profesora debe tener tiemopo para trasladarse. Ademas a causa de esto pueden haber variasiones en los horarios.</p>
 </body>
 </html>
 
